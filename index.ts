@@ -5,6 +5,8 @@ const app = express()
 
 const port = 8080
 
+app.use(express.json())
+
 app.get('/', (req: any, res: any) => {
   res.send('Server in express')
 });
